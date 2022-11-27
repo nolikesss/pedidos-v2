@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "./theme/index.scss";
+@import "./views/index.scss";
+
+html,
+body {
+  margin: 0;
+  background: #fafafa;
+}
+
+.app-main {
+  display: flex;
+  flex-direction: column;
+
+  .app-content {
+    @apply py-4 px-4;
+  }
+}
